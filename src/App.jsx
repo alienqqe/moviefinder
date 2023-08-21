@@ -53,6 +53,7 @@ function App() {
       (favorite) => favorite.imdbID !== movie.imdbID
     )
     setFavorites(newFavoriteList)
+    saveToLocalStorage(newFavoriteList)
   }
 
   return (
